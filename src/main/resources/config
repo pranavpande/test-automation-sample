@@ -1,0 +1,25 @@
+//Login Credentials
+
+loginUsername::automation
+loginPassword::828!Aug@
+
+
+//User Information
+
+username::mytest
+password::123123123
+buildforms::true
+thunderplug::false
+DebugMode::true
+DataCollector::false
+
+
+//Test Cases
+
+TestUrl::cd-loadapp
+
+
+classPath::/Users/pranavpande/git/iFormWebAutomation/target/classes
+screenshotDirectory::/Users/pranavpande/ownCloud/Automation Scripts/Screenshots/
+downloadDirectory::/Users/pranavpande/downloads/
+errorEmail::ppande@zerionsoftware.com

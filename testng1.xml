@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1">
+	<listeners>
+		<listener class-name="testRunner.TestNGListener" />
+	</listeners>
+	<!-- <test name="Test1" preserve-order="true" parallel="none">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="smoke.TestMyProfileNavigation" />
+			<class name="bugTests.TestUsernameLimit" />
+			<class name="bugTests.TestPasswordStrength" />
+		</classes>
+	</test>
+
+	<test name="Test2" preserve-order="true" parallel="none">
+		<parameter name="browser" value="chrome"></parameter>
+		<packages>
+			<package name=".*"></package><
+		</packages>
+	</test> -->
+	<parameter name="browser" value="chrome"></parameter>
+	<test name="bug test" preserve-order="true" parallel="false">
+		<packages>
+			<package name="bugTests" />
+		</packages>
+	</test>
+
+	<test name="smoke test" preserve-order="true" parallel="false">
+		<packages>
+			<package name="smokeTests" />
+		</packages>
+	</test>
+	
+</suite>

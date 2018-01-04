@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite2" verbose="1">
+	<listeners>
+		<listener class-name="testRunner.TestNGListener" />
+	</listeners>
+	<parameter name="browser" value="firefox"></parameter>
+	<test name="bug test" preserve-order="true" parallel="false">
+		<packages>
+			<package name="bugTests" />
+		</packages>
+	</test>
+
+	<test name="smoke test" preserve-order="true" parallel="false">
+		<packages>
+			<package name="smokeTests" />
+		</packages>
+	</test>
+</suite>
